@@ -16,6 +16,17 @@ $ rails s
 1. ブラウザを起動
 2. アドレス欄に http://localhost:3000/ と入力
 
+## Warning対策
+
+1. Gemfileの下記の行を修正
+
+```
+gem 'sass-rails',   '5.0.2'
+          ↓
+gem 'sass-rails',   '5.0.6'
+
+```
+
 ## クラウド環境での操作
 
 1. サーバーの起動 → rails s -b $IP -p $PORT
